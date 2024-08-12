@@ -17,6 +17,7 @@ public class LeituraDadosTeclado {
 
         System.out.println("Você tem animal de estimação? \n(true/false)");
         boolean temPet = sc.nextBoolean();
+
         System.out.println("Nome: " + nome);
         System.out.println("Idade: " + idade);
         System.out.println("Altura: " + altura);

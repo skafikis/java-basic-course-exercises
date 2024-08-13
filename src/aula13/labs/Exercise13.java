@@ -39,24 +39,22 @@ public class Exercise13 {
 
         if (sexo.equalsIgnoreCase("M")) {
             if (peso < ((72.7 * altura) - 58)) {
-                System.out.println("Abaixo do peso.");
-
+                System.out.println("Abaixo do peso ideal.");
             } else if (peso == ((72.7 * altura) - 58)) {
-                System.out.println("Dentro do peso.");
-
+                System.out.println("Dentro do peso ideal.");
             } else {
-                System.out.println("Acima do peso.");
+                System.out.println("Acima do peso ideal.");
             }
+
         } else {
             if (peso < ((62.1 * altura) - 44.7)) {
-                System.out.println("Abaixo do peso.");
-
+                System.out.println("Abaixo do peso ideal.");
             } else if (peso == ((62.1 * altura) - 44.7)) {
-                System.out.println("Dentro do peso.");
-
+                System.out.println("Dentro do peso ideal1.");
             } else {
-                System.out.println("Acima do peso.");
+                System.out.println("Acima do peso ideal.");
             }
+
         }
     }
 }

@@ -17,7 +17,7 @@ public class Exercise06 {
         System.out.println("Digite a medida do raio para calcular a área: ");
         double valueRaio = scanner.nextDouble();
 
-        double valueArea = (Math.PI * valueRaio * valueRaio);
+        double valueArea = (Math.PI * Math.pow(valueRaio, 2));
         System.out.println("O circulo de raio " + valueRaio + " tem a area de " + valueArea);
     }
 }

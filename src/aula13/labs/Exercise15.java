@@ -28,18 +28,20 @@ public class Exercise15 {
         System.out.println("Quantas horas você trabalha no mês? ");
         double hourWorkMonth = scanner.nextDouble();
 
+
         double grossIncome = (salaryHour * hourWorkMonth);
+        System.out.printf("Salário Bruto: R$ %.2f%n", grossIncome);
+
+        double inss = ((grossIncome /100) * 8);
+        System.out.printf("INSS (8%%): R$ %.2f%n", inss);
+
+        double sindicato = ((grossIncome /100) * 5);
+        System.out.printf("Sindicato (5%%): R$ %.2f%n", sindicato);
 
         double impostoRenda = (grossIncome * 0.11);
-        double inss = (grossIncome * 0.08);
-        double sindicato = (grossIncome * 0.05);
+        System.out.printf("Imposto de Renda (11%%): R$ %.2f%n", impostoRenda);
 
         double netIncome = grossIncome - (impostoRenda + inss + sindicato);
-
-        System.out.printf("Salário Bruto: R$ %.2f%n", grossIncome);
-        System.out.printf("Imposto de Renda (11%%): R$ %.2f%n", impostoRenda);
-        System.out.printf("INSS (8%%): R$ %.2f%n", inss);
-        System.out.printf("Sindicato (5%%): R$ %.2f%n", sindicato);
         System.out.printf("Salário Líquido: R$ %.2f%n", netIncome);
     }
 }

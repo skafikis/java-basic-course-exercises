@@ -10,7 +10,7 @@ package aula14.labs;
 
 import java.util.Scanner;
 
-public class Exercise2 {
+public class Exercise02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

@@ -42,8 +42,33 @@ public class Exercise12 {
         double salarioBruto = (valorHoraTrabalhada * totalHorasTrabalhadas);
         System.out.println("Salário Bruto: (" + valorHoraTrabalhada + " * " + totalHorasTrabalhadas + ") : R$ " + salarioBruto);
 
-        double impostoRenda = ((salarioBruto / 100) * 5);
-        System.out.println("(-) IR (5%) : R$ " + impostoRenda);
+
+        double impostoRenda = 0;
+
+        if (salarioBruto <= 900) {
+            impostoRenda = 0;
+        } else if (salarioBruto <= 1500) {
+            impostoRenda = salarioBruto * 0.05;
+        } else if (salarioBruto <= 2500) {
+            impostoRenda = salarioBruto * 0.10;
+        } else {
+            impostoRenda = salarioBruto * 0.20;
+        }
+
+        System.out.printf("(-) IR (%.0f%%) : R$ %.2f%n", ((impostoRenda / salarioBruto) * 100), impostoRenda);
+
+
+        double inss = (salarioBruto / 100) * 10;
+        System.out.println("(-) INSS (10%) : R$ " + inss);
+
+        double fgts = ((salarioBruto / 100) * 11);
+        System.out.println("FGTS (11%) : R$ " + fgts);
+
+        double descontosTotais = (impostoRenda + inss);
+        System.out.println("Total de desconto : R$ " + descontosTotais);
+
+        double salarioLiquido = (salarioBruto - descontosTotais);
+        System.out.println("Salário Liquido : R$ " + salarioLiquido);
     }
 
 }

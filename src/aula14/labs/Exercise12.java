@@ -43,7 +43,7 @@ public class Exercise12 {
         System.out.println("Salário Bruto: (" + valorHoraTrabalhada + " * " + totalHorasTrabalhadas + ") : R$ " + salarioBruto);
 
 
-        double impostoRenda = 0;
+        double impostoRenda;
 
         if (salarioBruto <= 900) {
             impostoRenda = 0;

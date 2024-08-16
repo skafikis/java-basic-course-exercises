@@ -25,12 +25,12 @@ public class Exercise05 {
         System.out.println("Digite sua nota do segundo bimestre: ");
         double nota2 = scanner.nextDouble();
 
-        double media = ((nota1 + nota2) / 2);
+        double media = (nota1 + nota2) / 2;
 
         if(media == 10){
             System.out.println("Aprovado com Distinção");
         } else if(media >= 7){
-                System.out.println("Aprovado");
+            System.out.println("Aprovado");
         } else if (media < 7) {
             System.out.println("Reprovado");
         }

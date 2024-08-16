@@ -18,15 +18,15 @@ public class Exercise03 {
         System.out.println("Type F or M: ");
         String letter = scanner.nextLine();
 
-        switch (letter){
-            case "F":
-                System.out.println("Female");
-            break;
-            case "M":
-                System.out.println("Male");
-            break;
-            default:
-                System.out.println("Invalid");
+        if(letter.equalsIgnoreCase("F")){
+            System.out.println("Female");
         }
+        else if(letter.equalsIgnoreCase("M")){
+            System.out.println("Male");
+        }
+        else{
+            System.out.println("Invalid");
+        }
+
     }
 }

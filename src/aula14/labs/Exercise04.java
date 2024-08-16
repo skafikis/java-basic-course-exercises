@@ -17,10 +17,28 @@ public class Exercise04 {
         System.out.println("Type an letter: ");
         String letter = scanner.nextLine();
 
-        if("AEIOU".contains(letter)){
-            System.out.println("Vogal");
+        if(letter.length() > 1){
+            System.out.println("Não é valido!\nDigite apenas um caracter!");
         } else {
-            System.out.println("Consoante");
+            if(letter.equalsIgnoreCase("a")){
+                System.out.println("Vogal");
+            }
+            else if(letter.equalsIgnoreCase("e")){
+                System.out.println("Vogal");
+            }
+            else if(letter.equalsIgnoreCase("i")){
+                System.out.println("Vogal");
+            }
+            else if(letter.equalsIgnoreCase("o")){
+                System.out.println("Vogal");
+            }
+            else if(letter.equalsIgnoreCase("u")){
+                System.out.println("Vogal");
+            }
+            else {
+                System.out.println("Consoante");
+            }
         }
+
     }
 }

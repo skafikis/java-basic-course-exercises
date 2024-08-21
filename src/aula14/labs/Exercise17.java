@@ -1,3 +1,12 @@
+/*
+ * Autor: Skafikis
+ * Professora: Loiane Groner
+ *
+ * Exercicio:
+ * Faça um Programa que peça um número correspondente a um determinado ano e em seguida informe se este ano é ou não
+ * bissexto.
+ * */
+
 package aula14.labs;
 
 import java.util.Scanner;

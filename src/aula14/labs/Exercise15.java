@@ -36,15 +36,17 @@ public class Exercise15 {
 
             if((medidaLado1 == medidaLado2) && (medidaLado2 == medidaLado3)){
                 System.out.println("Triângulo Equilátero");
-            } else
-            if ((medidaLado1 == medidaLado2) ||
+            }
+            else if ((medidaLado1 == medidaLado2) ||
                     (medidaLado2 == medidaLado3) ||
                     (medidaLado3 == medidaLado1)) {
                 System.out.println("Triângulo Isósceles");
-            } else {
+            }
+            else {
                 System.out.println("Triângulo Escaleno");
             }
-        } else {
+        }
+        else {
             System.out.println("Os valores não formam um triângulo");
         }
 

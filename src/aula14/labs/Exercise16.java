@@ -43,6 +43,7 @@ public class Exercise16 {
 
         // Verificando se há raiz real.
         if(delta < 0) {
+            // System.out.println("Valor de delta: " + delta);
             System.out.println("Delta negativo. A equação não possui raízes reais.");
             return;
         }
@@ -50,8 +51,11 @@ public class Exercise16 {
         // Verificando se delta é zero, indicando raiz unica
         if(delta == 0) {
             double raizUnica = -b / (2 * a);
+            // System.out.println("Valor de delta: " + delta);
             System.out.println("Delta igual a zero, a equação possui raiz unica: " + raizUnica);
         } else {
+            System.out.println("Valor de delta: " + delta);
+
             // Calculando x1 e x2
             double xUm = (-b + Math.sqrt(delta)) / (2 * a);
             System.out.println("Valor x1 = " + xUm);

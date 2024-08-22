@@ -5,6 +5,6 @@ public class Car {
     String brand;
     String model;
     int passengerNumber;
-    double gas;
+    double gasTank;
     double gasCost;
 }

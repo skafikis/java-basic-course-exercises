@@ -6,6 +6,5 @@ public class BookTest {
 
         book.nameBook = "Mistborn: The Final Empire";
         book.athorBook = "Brandon Sanderson";
-
     }
 }

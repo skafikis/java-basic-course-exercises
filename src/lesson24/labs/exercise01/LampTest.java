@@ -9,5 +9,8 @@ public class LampTest {
         lamp.lightColor = "Cool White";
         lamp.power = 9;
 
+        lamp.types = new String[2];
+        lamp.types[0] = "Abajur";
+        lamp.types[1] = "Pendente";
     }
 }

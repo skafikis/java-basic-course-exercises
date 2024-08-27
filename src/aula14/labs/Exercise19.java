@@ -13,5 +13,24 @@
 
 package aula14.labs;
 
+import java.util.Scanner;
+
 public class Exercise19 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter a number less than 1000: ");
+        double numLessMil = scanner.nextDouble();
+
+        if(numLessMil > 1000) {
+            System.out.println("You entered a number higher 1000");
+            return;
+        }
+        else {
+            double hundred = numLessMil % 100;
+            System.out.println("Numero de Centenas = " + hundred);
+
+            double tens = hundred % 10;
+        }
+    }
 }

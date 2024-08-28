@@ -27,10 +27,8 @@ public class Exercise19 {
             return;
         }
         else {
-            double hundred = numLessMil % 100;
+            double hundred = numLessMil / 100;
             System.out.println("Numero de Centenas = " + hundred);
-
-            double tens = hundred % 10;
         }
     }
 }

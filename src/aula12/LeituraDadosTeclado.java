@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class LeituraDadosTeclado {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         System.out.println("Olá, digite seu nome: ");
         String nome = sc.nextLine();
 
